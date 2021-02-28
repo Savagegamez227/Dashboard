@@ -1,0 +1,21 @@
+body {
+	background-color: white;
+}
+
+.hidden {
+	
+	display: none;
+	
+}
+
+td {
+	
+	color: red;
+	
+}
+
+a {
+	
+	color: gray;
+	
+}

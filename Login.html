@@ -1,0 +1,49 @@
+<html>
+<head>
+  <title>Login</title>
+  <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700" rel="stylesheet">
+  <link rel="stylesheet" href="css.css" />
+  <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-app.js"></script>
+</head>
+<body>
+
+  <div id="login_div" class="main-div">
+    <h3>Login</h3>
+    <input type="email" placeholder="Email..." id="email_field" />
+    <input type="password" placeholder="Password..." id="password_field" />
+
+    <button onclick="login()">Login to Account</button>
+  </div>
+
+  <div id="user_div" class="loggedin-div">
+    <h3>Welcome User</h3>
+    <p id="user_para">Welcome to Firebase web login Example. You're currently logged in.</p>
+    <button onclick="logout()">Logout</button>
+	
+	<p>
+	<form action="Admin.html" method="post">
+		<button id="MainButton123"> Click to Continue to main form </button>
+	</form>
+	</p>
+  </div>
+
+
+
+  <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+  <script>
+    // Initialize Firebase
+var firebaseConfig = {
+    apiKey: "AIzaSyBDdM6H_rpRTNlTZY_SCZvqhKSp1K1dK18",
+    authDomain: "signin-55cda.firebaseapp.com",
+    projectId: "signin-55cda",
+    storageBucket: "signin-55cda.appspot.com",
+    messagingSenderId: "208707460267",
+    appId: "1:208707460267:web:cbf50ddcafc6176282ebee",
+    measurementId: "G-28BXP79M05"
+  };
+   firebase.initializeApp(firebaseConfig);
+  </script>
+  <script src="index.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <link rel="stylesheet" href="Search.css" />
+    <title>Search</title>
+</head>
+
+    <body style="background-color: #222222;" >
+    <center>        
+        <div id="Bar"><input type="search" value="" id="search" onchange="openPage()" placeholder="Search..."></div>
+    </center>
+
+    <script>
+        function openPage() {
+            var x = document.getElementById("search").value;
+
+            if (x === "contracts") {
+                window.open("/Contracts.xlsx");
+            }
+            else if (x === "Contracts") {
+                window.open("Contracts.xlsx");
+            }
+
+            if (x === "Dashboard") {
+                window.open("Admin.html");
+            }
+            else if (x === "dashboard") {
+                window.open("Admin.html");
+            }
+
+        }
+    </script>
+</body>
+
+</html>
