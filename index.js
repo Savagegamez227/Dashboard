@@ -43,3 +43,8 @@ function login(){
 function logout(){
   firebase.auth().signOut();
 }
+
+function YouTube(){
+  
+  window.open("other.html")
+}
