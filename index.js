@@ -46,5 +46,9 @@ function logout(){
 
 function YouTube(){
   
-  window.open("other.html")
+  window.open("other.html");
+}
+
+function NewForm123() {
+  window.open("Admin.html");
 }
